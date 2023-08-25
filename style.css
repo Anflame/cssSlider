@@ -1,0 +1,103 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+  
+.subscribe__slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 41px; 
+  width: calc(50% - 0.5px);
+}
+
+.subscribe__item {
+  padding: 10px;
+  display: none;
+  justify-content: center; 
+}
+
+.subscribe__avatar {
+  object-fit: cover;
+  width: 83px;
+  height: 83px;
+  margin-right: 20px;
+}
+
+.subscribe__info {
+  width: 386px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.subscribe__description {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+   
+.subscribe__name {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.025em;
+}
+                  
+.subscribe__name--first {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #f16d7f;
+}
+                     
+.subscribe__name--second {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #222224;  
+}
+
+.tab__input {
+  display: none;
+}
+
+.tab__input:checked + .subscribe__tabs_label {
+  background-color: #f16d7f;
+}
+
+.subscribe__input--first:checked ~ .subscribe__item:first-of-type,
+.subscribe__input--second:checked ~ .subscribe__item:nth-of-type(2),
+.subscribe__input--third:checked ~ .subscribe__item:last-of-type
+ {
+  display: flex;
+}
+
+.subscribe__tabs_label {
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #d6d6d6;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+}
+
+.subscribe__tabs_label:first-of-type {
+  left: calc(50% - 105px);
+}
+
+.subscribe__tabs_label:nth-of-type(2) {
+  left: calc(50% - 50px);
+}
+
+.subscribe__tabs_label:last-of-type {
+  left: calc(50% + 5px);
+}
+
+.subscribe__tabs_label:not(:last-child) {
+  margin-right: 5px;
+}
+         
